@@ -1,5 +1,5 @@
 package soal2;
 
-public class paint {
+public class Paint {
     
 }
