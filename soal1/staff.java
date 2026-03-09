@@ -3,7 +3,7 @@ package soal1;
 public class Staff {
     StaffMember[] staffList;
 
-    // Sets up the list of staff members.
+    
     public Staff() {
         staffList = new StaffMember[8];
 
@@ -14,23 +14,23 @@ public class Staff {
         staffList[4] = new Volunteer("Norm", "987 Suds Blvd.", "555-8374");
         staffList[5] = new Volunteer("Cliff", "321 Duds Lane", "555-7282");
 
-        // Karyawan komisi baru
+        
         staffList[6] = new Commission("Asep", "Jalan Merdeka No 1", "555-1234", "111-22-3333", 6.25, 0.20);
         staffList[7] = new Commission("Putri", "Jalan Anggrek No 2", "555-5678", "444-55-6666", 9.75, 0.15);
 
         ((Executive) staffList[0]).awardBonus(500.00);
         ((Hourly) staffList[3]).addHours(40);
 
-        // Karyawan komisi pertama
+       
         ((Commission) staffList[6]).addHours(35);
         ((Commission) staffList[6]).addSales(400.0);
 
-        // Karyawan komisi kedua
+       
         ((Commission) staffList[7]).addHours(40);
         ((Commission) staffList[7]).addSales(950.0);
     }
 
-    // Pays all staff members.
+    
     public void payday() {
         double amount;
         for (int count = 0; count < staffList.length; count++) {
