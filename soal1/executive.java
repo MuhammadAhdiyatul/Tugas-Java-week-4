@@ -5,11 +5,11 @@ public class Executive extends Employee {
 
     public Executive(String eName, String eAddress, String ePhone, String socSecNumber, double rate) {
         super(eName, eAddress, ePhone, socSecNumber, rate);
-        bonus = 0; // bonus has yet to be awarded
+        bonus = 0; 
     }
 
     public void awardBonus(double execBonus) {
-        bonus = execBonus; // Sebelumnya di PDF kurang tanda "=" [cite: 236]
+        bonus = execBonus; 
     }
 
     public double pay() {

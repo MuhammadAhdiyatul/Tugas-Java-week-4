@@ -3,14 +3,14 @@ package soal1;
 public class Hourly extends Employee {
     private int hoursWorked;
 
-    // Kurung kurawal di posisi yang benar
+    
     public Hourly(String eName, String eAddress, String ePhone, String socSecNumber, double rate) {
         super(eName, eAddress, ePhone, socSecNumber, rate);
         hoursWorked = 0;
     }
 
     public void addHours(int moreHours) {
-        hoursWorked += moreHours; // Sebelumnya di PDF kurang tanda "=" [cite: 284]
+        hoursWorked += moreHours; 
     }
 
     public double pay() {

@@ -10,7 +10,7 @@ public class Commission extends Hourly {
         this.totalSales = 0.0;
     }
 
-    // Method untuk menambahkan total penjualan [cite: 16]
+    
     public void addSales(double totalSales) {
         this.totalSales += totalSales;
     }
@@ -28,7 +28,6 @@ public class Commission extends Hourly {
 
     @Override
     public String toString() {
-        // Memanggil method toString() parent, lalu menambahkan total penjualan [cite: 19]
         String result = super.toString();
         result += "\nTotal Sales: " + totalSales;
         return result;

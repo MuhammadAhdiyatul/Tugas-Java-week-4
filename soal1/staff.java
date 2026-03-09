@@ -1,4 +1,4 @@
-package soal1; // Pastikan ini ada di baris paling atas
+package soal1; 
 
 public class Staff {
     StaffMember[] staffList;
